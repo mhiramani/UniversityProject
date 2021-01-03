@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <app-side-bar></app-side-bar>>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <app-topbar></app-topbar>
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title">ADD NEW UNIVERSITY</h4>
+                  <p class="card-category">#</p>
+                </div>
+                <div class="card-body">
+                  <form [formGroup]="universtyAddform" (ngSubmit)="addUnivesity()">
+                   
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">NAME</label>
+                          <input formControlName="name" type="text" id="nom" class="form-control">
+                             <small
+                              *ngIf="universtyAddform.get('name')?.touched && universtyAddform.get('name')?.invalid"
+                              class="text-danger">name is required</small>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">IMAGE</label>
+                          <input formControlName="imageUrl" type="text" id="nom" class="form-control">
+                          <small
+                              *ngIf="universtyAddform.get('imageUrl')?.touched && universtyAddform.get('imageUrl')?.invalid"
+                              class="text-danger">imageUrl is required</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                      
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">PRICE</label>
+                          <input formControlName="price" type="text" id="nom" class="form-control">
+                                        <small
+                                            *ngIf="universtyAddform.get('price')?.touched && universtyAddform.get('price')?.invalid"
+                                            class="text-danger">price is required</small>
+                        </div>
+                      </div>
+                
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label> DESCRIPTION </label>
+                          
+                          <div class="form-group">
+                            <input formControlName="description" type="text" id="nom" class="form-control">
+                            <small
+                                *ngIf="universtyAddform.get('description')?.touched && universtyAddform.get('description')?.invalid"
+                                class="text-danger">description is required</small>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark" routerLink="/">ADD NEW UNIVERSITY</button>
+                      </div>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+ 
+</body>
+
+</html>

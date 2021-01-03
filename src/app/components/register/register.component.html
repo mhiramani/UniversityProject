@@ -1,0 +1,71 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Snow Signup form Responsive Widget Template : W3Layouts</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style -->
+	
+</head>
+
+<body>
+	<!-- Signup form -->
+	<section class="w3l-signup">
+		<div >
+			<div class="wrapper">
+				<div class="logo">
+					<a class="brand-logo" href="index.html">Signup Form</a>
+				</div>
+				<div class="form-section">
+					<h3>Sign up</h3>
+					<form [formGroup]="registerForm" method="post" class="signin-form" (ngSubmit)="registerUser()">
+						<div class="form-input">
+                            <input type="text" name="username" placeholder="Username" formControlName="username">
+                            <small
+                            *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.invalid"
+                            class="text-danger">Username is required</small>
+						</div>
+						<div class="form-input">
+                            <input type="email" name="email" placeholder="Email" formControlName="email">
+                            <small
+                            *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid"
+                            class="text-danger">email is required</small>
+						</div>
+						<div class="form-input">
+							<input type="password" name="password" placeholder="Password" formControlName="password" >
+                            <small
+                            *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid"
+                            class="text-danger">password is required</small>
+                        </div>
+                        <div class="form-input">
+							<input type="password" name="repassword" placeholder="Repeat Password" formControlName="repassword">
+                            <small
+                            *ngIf="registerForm.get('repassword')?.touched && registerForm.get('repassword')?.invalid"
+                            class="text-danger">repassword is required</small>
+                        </div>
+						<button type="submit" class="btn btn-primary theme-button mt-4" [disabled]="registerForm.invalid">Sign Up</button>
+					</form><p class="signup">Already a customer? <a routerLink="/login" class="signuplink">Login now</a></p>
+				</div>
+			</div>
+		</div>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+
+		
+		<!-- //copyright -->
+	</section>
+
+	<!-- /Signup form -->
+</body>
+
+</html>
