@@ -37,7 +37,7 @@ The above copyright notice and this permission notice shall be included in all c
       <!-- End Navbar -->
       <div class="content">
           <div>
-            <button type="button" class="btn btn-dark" routerLink="/university_add">ADD NEW UNIVERSITY</button>
+            <button type="button" class="btn btn-dark" routerLink="/university-add">ADD NEW UNIVERSITY</button>
           </div>
         <div class="container-fluid">
           <div class="row">
@@ -83,11 +83,50 @@ The above copyright notice and this permission notice shall be included in all c
                           <td>{{university.image}}</td>
                           <td class="text-primary" >{{university.price}}</td>
                           <td>
-                            <button class="btn btn-danger" (click)="deleteCategory(category)">
+                            <button class="btn btn-danger" >
                                 <i class="fa fa-trash"></i>
                             </button>
                         </td>
                       </tr>
+                      <tr >
+                        <td>2</td>
+                        <td>esprit</td>
+                        <td>tunis</td>
+                        <td>it is a good university </td>
+                        <td>#</td>
+                        <td class="text-primary" >8200 dt</td>
+                        <td>
+                          <button class="btn btn-danger" >
+                              <i class="fa fa-trash"></i>
+                          </button>
+                      </td>
+                    </tr>
+                    <tr >
+                      <td>3</td>
+                      <td>ULT</td>
+                      <td>tunis</td>
+                      <td>it is a good university </td>
+                      <td>#</td>
+                      <td class="text-primary" >7200 dt</td>
+                      <td>
+                        <button class="btn btn-danger" >
+                            <i class="fa fa-trash"></i>
+                        </button>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td>1</td>
+                    <td>ITBS</td>
+                    <td>tunis</td>
+                    <td>it is a good university </td>
+                    <td>#</td>
+                    <td class="text-primary" >6800 dt</td>
+                    <td>
+                      <button class="btn btn-danger" >
+                          <i class="fa fa-trash"></i>
+                      </button>
+                  </td>
+                </tr>
                       </tbody>
                     </table>
                   </div>
@@ -136,17 +175,17 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
   <!-- Library for adding dinamically elements -->
-  <script src="../assets/js/plugins/arrive.min.js"></script>
+  <script src="assets/js/plugins/arrive.min.js"></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chartist JS -->
-  <script src="../assets/js/plugins/chartist.min.js"></script>
+  <script src="assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->
-  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+  <script src="assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-  <script src="../assets/demo/demo.js"></script>
+  <script src="assets/demo/demo.js"></script>
   <script>
     $(document).ready(function() {
       $().ready(function() {

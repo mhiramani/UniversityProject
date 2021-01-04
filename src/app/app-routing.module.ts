@@ -27,11 +27,11 @@ const routes: Routes = [
 
   },
   {
-    path: "university_list",
+    path: "university-list",
     component: UniversityListComponent
   },
   {
-    path: "university_add",
+    path: "university-add",
     component: UniversityAddComponent
   },
     {
